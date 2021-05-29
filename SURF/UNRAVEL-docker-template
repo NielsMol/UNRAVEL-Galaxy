@@ -1,0 +1,20 @@
+CONTEXT = [
+  NETWORK = "YES",
+  SSH_PUBLIC_KEY = "$USER[SSH_PUBLIC_KEY]",
+  START_SCRIPT = "DEBIAN_FRONTEND=noninteractive apt-get update && apt-get -y -o Dpkg::Options::='--force-confdef' -o Dpkg::Options::='--force-confold' dist-upgrade",
+  USERNAME = "ubuntu" ]
+CPU = "4"
+DISK = [
+  IMAGE = "Ubuntu_Docker_Unravel-Version_1.001",
+  IMAGE_UNAME = "fairheartgalaxy-Niels2" ]
+FEATURES = [
+  ACPI = "yes",
+  LOCALTIME = "no" ]
+LOGO = "images/logos/ubuntu.png"
+MEMORY = "16384"
+NIC = [
+  NETWORK = "internet",
+  NETWORK_UNAME = "oneadmin" ]
+OS = [
+  ARCH = "x86_64" ]
+VCPU = "4"
