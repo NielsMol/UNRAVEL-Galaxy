@@ -1,0 +1,175 @@
+###############################
+# Markdown DRE UNRAVEL GALAXY #
+###############################
+
+### Open DRE:https://mydre.org/workspaces/
+
+#Loging:
+#name
+#PW
+#authenticator PW
+
+#Note :All cookies must be allowed for this website to run and work on the workspaces!!!
+
+#Press Machine "dws" = dre workspace and press green play button
+
+#open downloaded .rdp file and allow remote connection
+
+#Loging --> same as for mydre.org
+#name
+#pw
+
+### Open ubuntu v18.04
+
+ls
+cd galaxy
+sudo su
+
+#use password for Niels@
+#pw **********
+
+#!!! MAKE SURE YOU ALLOW/DISAGREE WITH THE EXTERNAL ACCESS ROLES IN THE "Mydre.org/workspace" SECTION!!! --> Ip 
+
+# Allow the following ports to prevent later errors:
+sudo ufw allow 22
+sudo ufw allow 80
+sudo ufw allow 88
+sudo ufw allow 443
+
+### for the isntallation/update of ubuntu/python/ansible
+sudo apt-get update # --> updates ubuntu through ip "91.189.88.152:80" It is possible that .152 changes, make sure to check the error message for correct ip
+
+sudo apt install software-properties-common
+sudo apt-add-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible
+
+### Testing ansible with intro functions
+
+# Create new intro directory
+
+mkdir intro
+cd intro
+nano hosts
+
+# write the following in the host file
+[my_hosts]
+localhost ansible_connection=local ansible_user=ubuntu
+#use ctrl O and ctrl X to save and close
+
+# create the roles directory
+mkdir -p roles/my-role/tasks/
+nano mkdir -p roles/my-role/tasks/main.yml
+
+# add the following to main.yml
+---
+- name: Copy a file to the remote host
+  copy:
+    src: test.txt
+    dest: /tmp/test.txt
+# create new directory roles/my-role/files/
+mkdir roles/my-role/files/
+nano roles/my-role/files/test.txt
+
+#add "Hello Galaxy!" as a line and save
+
+# create a playbook called playbook.yml
+nano playbook.yml
+
+#add:
+---
+- hosts: my_hosts
+  roles:
+    - my-role
+
+### Running a playbook
+
+# make sure you are in the "galaxy" directory
+
+#use the following command to run the playbook:
+ansible-playbook -i hosts playbook.yml
+
+########################################################################
+# Result should give the ok, changed, unreachable and failed statusses.# 
+# MAKE SURE YOU DO NOT USE TABS IN THESE FILES, ONLY SPACES!!!##########
+# Check: https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible/tutorial.html#facts for more info #
+########################################################################
+
+# The following commands can be used as a checkup to control the playbook command
+
+ansible -i hosts -m setup my_hosts | less ### This command provides a list that can be used to create personal roles and check the ip-adresses your ansible currently uses, very handy when working in DRE ###
+
+ansible-playbook -i hosts playbook.yml --check --diff ### these flags in the command will check the changes that will be made before committing to them, always run this command first before starting maintainance
+
+#######################################
+#######################################
+# RUNNING GALAXY ON DRE USING ANSIBLE #
+#######################################
+#######################################
+
+# The following training was used as a basis for the DRE-Galaxy construction: https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html
+# This link offers all of the information to start building a galaxy or to better understand its background.
+ 
+# install python3 and ansible 2.7(or higher) using commands:
+# for installing ansible, see the intro testing of this mardown
+sudo apt install python3
+sudo apt-get install python-pip python-dev
+sudo -H pip install ansible==2.9
+
+# Check this out: https://stackoverflow.com/questions/50538586/install-specific-version-of-ansible-2-3-1-0-on-ubuntu-18-04-lts
+
+# Make directory, inventory file and group_vars
+mkdir /home/#USERNAME#/galaxy
+cd galaxy
+
+nano hosts 
+# Contents of file:
+[galaxyservers]
+localhost ansible_connection=local ansible_user=ubuntu
+# Ctrl X + Ctrl O to save
+
+# in the Galaxy repository:
+nano requirements.yml
+
+# with contents of file:
+- src: galaxyproject.galaxy
+  version: 0.9.7
+- src: galaxyproject.nginx
+  version: 0.6.4
+- src: galaxyproject.postgresql
+  version: 1.0.3
+- src: natefoo.postgresql_objects
+  version: 1.1
+- src: geerlingguy.pip
+  version: 2.0.0
+- src: uchida.miniconda
+  version: 0.3.0
+- src: usegalaxy_eu.galaxy_systemd
+  version: 0.1.4
+- src: usegalaxy_eu.certbot
+  version: 0.1.5
+# Ctrl X + Ctrl O to save
+
+
+# For more roles and reasons to install them: https://training.galaxyproject.org/training-material/topics/admin/tutorials/ansible-galaxy/tutorial.html
+
+# Run the playbook:
+ansible-galaxy install -p roles -r requirements.yml
+
+# NOTE:There is a possibility that the line won't run. This is because of the network issues that DRE is facing at this time (30-04-2021)
+# IMPORTANT NOTICE: I CANNOT SEEM TO INSTALL GALAXY THROUGH ANSIBLE DUE TO THE NETWORK INAVAILABILITY, NOW TRIED DOCKER INSTEAD
+# The following websites were used:
+# https://docs.docker.com/engine/install/ubuntu/ --> how to install docker on ubuntu 18.04
+# https://github.com/LUMC/galaxy-launcher --> The docker that will be installed from LUMC
+# https://hub.docker.com/r/bgruening/galaxy-stable/ --> The pre-made galaxy docker image for installation on DRE
+# https://galaxy-launcher.readthedocs.io/en/stable/developer_docs/introduction/ -->
+# https://github.com/jdauphant/ansible-role-nginx --> role for requirements.yml for the docker
+
+
+
+
+
+
+
+
+
+
