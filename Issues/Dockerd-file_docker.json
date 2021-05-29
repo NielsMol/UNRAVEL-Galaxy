@@ -1,0 +1,36 @@
+### Start the daemon manually
+# If you don’t want to use a system utility to manage the Docker daemon, or just want to test things out, you can manually run it using the dockerd command. You may need to use sudo, depending on your operating system configuration.
+
+# When you start Docker this way, it runs in the foreground and sends its logs directly to your terminal.
+
+dockerd
+
+INFO[0000] +job init_networkdriver()
+INFO[0000] +job serveapi(unix:///var/run/docker.sock)
+INFO[0000] Listening for HTTP on unix (/var/run/docker.sock)
+
+# To stop Docker when you have started it manually, issue a Ctrl+C in your terminal.
+### Configure the Docker daemon
+
+sudo nano /etc/docker/daemon.json
+> 
+
+{
+  "debug": true,
+  "tls": true,
+  "tlscert": "/var/docker/server.pem",
+  "tlskey": "/var/docker/serverkey.pem",
+  "hosts": ["tcp://192.168.59.3:2376"]
+}
+
+Ctrl-X+O
+
+# Add daemon port 192.168.29.3:2376
+
+sudo ufw allow 2376
+
+dockerd --debug \
+  --tls=true \
+  --tlscert=/var/docker/server.pem \
+  --tlskey=/var/docker/serverkey.pem \
+  --host tcp://192.168.59.3:2376
