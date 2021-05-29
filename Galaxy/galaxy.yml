@@ -1,0 +1,57 @@
+---
+- hosts: ["galaxyservers"]
+  become: true
+  # -e ansible_user=galaxy
+  pre_tasks:
+    - name: Install Dependencies
+      package:
+        name: ['git', 'make', 'python3-psycopg2', 'virtualenv', 'tar', 'bzip2']
+    #- name: Create the second storage directory
+    #  file:
+    #    owner: galaxy
+    #    group: galaxy
+    #    path: /mnt/galaxy-data/data
+    #    state: directory
+    #    mode: '0755'
+    - pip:
+        name: passlib
+    - htpasswd:
+        path: /etc/nginx/passwd
+        name: fairheartgalaxy-test        # Pick a username
+        password: hogeschoolAvans # and a password
+        owner: www-data    # nginx on centos
+        group: root
+        mode: 0640
+        # remote_user_logout_href:
+        # require_login:
+        # allow_user_creation
+
+  handlers:
+    - name: Restart Galaxy
+      systemd:
+        name: galaxy
+        state: restarted
+  roles:
+    - galaxyproject.repos
+    - galaxyproject.slurm
+    - galaxyproject.postgresql
+    - role: natefoo.postgresql_objects
+      become: true
+      become_user: postgres
+    - geerlingguy.pip
+# .docker moet nog naar gekeken worden, momenteel uitgezet om andere instalatie te gaan updaten
+   # - geerlingguy.docker
+   # - atosatto.minio
+    - galaxyproject.galaxy
+    - role: uchida.miniconda
+      become: true
+      become_user: galaxy
+    - usegalaxy_eu.galaxy_systemd
+    - galaxyproject.nginx
+    - galaxyproject.cvmfs
+    - dj-wasabi.telegraf
+
+  post_tasks:
+    - name: Install slurm-drmaa
+      package:
+        name: slurm-drmaa1
