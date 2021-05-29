@@ -33,8 +33,10 @@ This final directory is where certbot (managed by letsencrypt) uploads its reque
  
 ## Installation of SLURM                          
  Installed with Slurm is MUNGE (MUNGE Uid ‘N Gid Emporium) which authenticates users between cluster hosts. You would normally need to ensure the same Munge key is distributed across all cluster hosts (in /etc/munge/munge.key). A great task for Ansible. However, the installation of the munge package has created a random key for you, and you will not need to distribute this since you’ll run jobs only on a single host. You can now check that all of the daemons are running with the command: systemctl status munge slurmd slurmctld.
-You would normally need to ensure the same Munge key is distributed across all cluster hosts (in /e$# A great task for Ansible. However, the installation of the munge package has created a random key f$# You can now check that all of the daemons are running with the command:       systemctl status mung$# Link that helps oncifuration of SLURM:        https://slurm.schedmd.com/configurator.html
+You would normally need to ensure the same Munge key is distributed across all cluster hosts (in /e$# A great task for Ansible. However, the installation of the munge package has created a random key f$# You can now check that all of the daemons are running with the command:       systemctl status munge
+
 Link that helps oncifuration of SLURM:        https://slurm.schedmd.com/configurator.html
+
 Link to dynamic job configuration:            https://docs.galaxyproject.org/en/latest/admin/jobs.html#dynamic-destination-mapping-python-method
 
 
