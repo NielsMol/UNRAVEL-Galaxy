@@ -1,0 +1,14 @@
+Common Aspects
+The metadata objects required for read submissions are as follows:
+
+Study: information about the sequencing study
+Samples: Information about the sequencing samples
+Experiments: Information about the sequencing methods, protocols and machines. Experiments generate the linkage between samples and study. Only necessary for FASTQ and BAM/CRAM submissions.
+Runs: Samples, experiments and files are linked through runs - appropriate objects for FASTQ and BAM/CRAM submissions
+Analysis: References the analysis (BAM) files; associated with samples and study.
+DAC: contains information about the Data Access Committee (DAC)
+Policy: contains the Data Access Agreement (DAA); associated with DAC
+Dataset: contains the collection of runs/analysis data files to be subject to controlled access; associated with Policy
+
+**Study, samples, DAC and policy metadata can all be registered prior to uploading files**
+If you are performing Array-based submission(s), the Submitter Portal should only be used to register the Study, Samples, Data Access Committee (DAC) and Policy metadata objects. We are currently working on the features to provide the creation of array metadata submissions using the portal..

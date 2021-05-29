@@ -1,0 +1,16 @@
+
+Identifiers
+EGA objects can be identified by their unique accession. These are ID's displayed everywhere, shared among all EGA locations and specific for each data type (More information on the list below)
+
+  EGA
+  Accession ID	  EGA Object description
+EGAS	EGA Study Accession ID
+EGAC	EGA DAC Accession ID
+EGAP	EGA Policy Accession ID
+EGAN	EGA Sample Accession ID
+EGAR	EGA Run Accession ID
+EGAX	EGA Experiment ID
+EGAZ	EGA Analysis Accession ID
+EGAD	EGA Dataset Accession ID
+EGAB	EGA Submission ID
+EGAF	EGA File Unique Accession ID
