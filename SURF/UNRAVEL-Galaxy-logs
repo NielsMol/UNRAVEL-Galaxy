@@ -1,0 +1,725 @@
+Fri Oct 30 13:07:09 2020 [Z0][HKM][I]: Success executing Hook: SurfSARA_Dns: Added DNS record: UNRAVEL-Galaxy-Version-21-5.fairheartgalaxy-avans.surf-hosted.nl -> 145.100.59.231.
+Fri Oct 30 13:07:12 2020 [Z0][VM][I]: New state is ACTIVE
+Fri Oct 30 13:07:12 2020 [Z0][VM][I]: New LCM state is PROLOG
+Fri Oct 30 13:15:10 2020 [Z0][VM][I]: New LCM state is BOOT
+Fri Oct 30 13:15:10 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.0
+Fri Oct 30 13:15:11 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Fri Oct 30 13:15:11 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Oct 30 13:15:11 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Fri Oct 30 13:15:12 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Oct 30 13:15:12 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Fri Oct 30 13:15:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Fri Oct 30 13:15:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=63,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Fri Oct 30 13:15:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=63,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Fri Oct 30 13:15:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=63,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Fri Oct 30 13:15:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=63,priority=39000,actions=drop".
+Fri Oct 30 13:15:12 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Oct 30 13:15:12 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Fri Oct 30 13:15:12 2020 [Z0][VM][I]: New LCM state is RUNNING
+Fri Oct 30 16:52:58 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Fri Oct 30 16:53:35 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Oct 30 16:53:35 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Fri Oct 30 16:53:35 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=63".
+Fri Oct 30 16:53:35 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Oct 30 16:53:35 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Fri Oct 30 16:53:35 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Fri Oct 30 16:59:45 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Fri Oct 30 16:59:45 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Mon Nov 2 11:24:19 2020 [Z0][VM][I]: New state is PENDING
+Mon Nov 2 11:24:21 2020 [Z0][VM][I]: New state is ACTIVE
+Mon Nov 2 11:24:21 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Mon Nov 2 11:35:53 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Mon Nov 2 11:35:53 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.1
+Mon Nov 2 11:35:54 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Mon Nov 2 11:35:54 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 2 11:35:54 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Mon Nov 2 11:35:55 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 2 11:35:55 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Mon Nov 2 11:35:55 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Mon Nov 2 11:35:55 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=65,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Mon Nov 2 11:35:55 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=65,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Mon Nov 2 11:35:55 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=65,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Mon Nov 2 11:35:55 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=65,priority=39000,actions=drop".
+Mon Nov 2 11:35:55 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 2 11:35:55 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Mon Nov 2 11:35:55 2020 [Z0][VM][I]: New LCM state is RUNNING
+Mon Nov 2 17:25:09 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Mon Nov 2 17:25:45 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 2 17:25:45 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Mon Nov 2 17:25:46 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=65".
+Mon Nov 2 17:25:46 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 2 17:25:46 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Mon Nov 2 17:25:46 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Mon Nov 2 17:32:36 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Mon Nov 2 17:32:36 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Tue Nov 3 09:07:55 2020 [Z0][VM][I]: New state is PENDING
+Tue Nov 3 09:08:02 2020 [Z0][VM][I]: New state is ACTIVE
+Tue Nov 3 09:08:02 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Tue Nov 3 09:19:26 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Tue Nov 3 09:19:26 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.2
+Tue Nov 3 09:19:27 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Tue Nov 3 09:19:27 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 3 09:19:27 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Tue Nov 3 09:19:28 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 3 09:19:28 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Tue Nov 3 09:19:28 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Tue Nov 3 09:19:28 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=91,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Tue Nov 3 09:19:28 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=91,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Tue Nov 3 09:19:28 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=91,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Tue Nov 3 09:19:28 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=91,priority=39000,actions=drop".
+Tue Nov 3 09:19:28 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 3 09:19:28 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Tue Nov 3 09:19:28 2020 [Z0][VM][I]: New LCM state is RUNNING
+Tue Nov 3 13:46:59 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Tue Nov 3 13:48:07 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 3 13:48:07 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Tue Nov 3 13:48:07 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=91".
+Tue Nov 3 13:48:07 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 3 13:48:07 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Tue Nov 3 13:48:07 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Tue Nov 3 13:53:22 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Tue Nov 3 13:53:22 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Tue Nov 3 13:59:48 2020 [Z0][VM][I]: New state is PENDING
+Tue Nov 3 13:59:54 2020 [Z0][VM][I]: New state is ACTIVE
+Tue Nov 3 13:59:54 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Tue Nov 3 14:08:36 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Tue Nov 3 14:08:36 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.3
+Tue Nov 3 14:08:36 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Tue Nov 3 14:08:36 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 3 14:08:36 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Tue Nov 3 14:08:38 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 3 14:08:38 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Tue Nov 3 14:08:38 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Tue Nov 3 14:08:38 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=92,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Tue Nov 3 14:08:38 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=92,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Tue Nov 3 14:08:38 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=92,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Tue Nov 3 14:08:38 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=92,priority=39000,actions=drop".
+Tue Nov 3 14:08:38 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 3 14:08:38 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Tue Nov 3 14:08:38 2020 [Z0][VM][I]: New LCM state is RUNNING
+Tue Nov 3 16:28:59 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Tue Nov 3 16:29:35 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 3 16:29:35 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Tue Nov 3 16:29:35 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=92".
+Tue Nov 3 16:29:35 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 3 16:29:35 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Tue Nov 3 16:29:35 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Tue Nov 3 16:35:27 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Tue Nov 3 16:35:27 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Wed Nov 4 09:31:40 2020 [Z0][VM][I]: New state is PENDING
+Wed Nov 4 09:31:46 2020 [Z0][VM][I]: New state is ACTIVE
+Wed Nov 4 09:31:46 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Wed Nov 4 09:42:33 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Wed Nov 4 09:42:33 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.4
+Wed Nov 4 09:42:33 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Wed Nov 4 09:42:34 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Nov 4 09:42:34 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Wed Nov 4 09:42:35 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Nov 4 09:42:35 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Wed Nov 4 09:42:35 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Wed Nov 4 09:42:35 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=93,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Wed Nov 4 09:42:35 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=93,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Wed Nov 4 09:42:35 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=93,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Wed Nov 4 09:42:35 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=93,priority=39000,actions=drop".
+Wed Nov 4 09:42:35 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Nov 4 09:42:35 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Wed Nov 4 09:42:35 2020 [Z0][VM][I]: New LCM state is RUNNING
+Wed Nov 4 17:50:35 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Wed Nov 4 17:51:00 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Nov 4 17:51:00 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Wed Nov 4 17:51:00 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=93".
+Wed Nov 4 17:51:00 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Nov 4 17:51:00 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Wed Nov 4 17:51:00 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Wed Nov 4 17:56:24 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Wed Nov 4 17:56:24 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Thu Nov 5 09:00:42 2020 [Z0][VM][I]: New state is PENDING
+Thu Nov 5 09:00:52 2020 [Z0][VM][I]: New state is ACTIVE
+Thu Nov 5 09:00:52 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Thu Nov 5 09:12:28 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Thu Nov 5 09:12:28 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.5
+Thu Nov 5 09:12:28 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Thu Nov 5 09:12:29 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Nov 5 09:12:29 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Thu Nov 5 09:12:30 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Nov 5 09:12:30 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Thu Nov 5 09:12:30 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Thu Nov 5 09:12:30 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=94,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Thu Nov 5 09:12:30 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=94,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Thu Nov 5 09:12:30 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=94,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Thu Nov 5 09:12:30 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=94,priority=39000,actions=drop".
+Thu Nov 5 09:12:30 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Nov 5 09:12:30 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Thu Nov 5 09:12:30 2020 [Z0][VM][I]: New LCM state is RUNNING
+Thu Nov 5 12:02:43 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Thu Nov 5 12:03:19 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Nov 5 12:03:19 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Thu Nov 5 12:03:19 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=94".
+Thu Nov 5 12:03:19 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Nov 5 12:03:19 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Thu Nov 5 12:03:19 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Thu Nov 5 12:09:08 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Thu Nov 5 12:09:08 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Fri Nov 6 09:24:07 2020 [Z0][VM][I]: New state is PENDING
+Fri Nov 6 09:24:16 2020 [Z0][VM][I]: New state is ACTIVE
+Fri Nov 6 09:24:16 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Fri Nov 6 09:34:51 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Fri Nov 6 09:34:51 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.6
+Fri Nov 6 09:34:52 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Fri Nov 6 09:34:52 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Nov 6 09:34:52 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Fri Nov 6 09:34:53 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Nov 6 09:34:53 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Fri Nov 6 09:34:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Fri Nov 6 09:34:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=78,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Fri Nov 6 09:34:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=78,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Fri Nov 6 09:34:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=78,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Fri Nov 6 09:34:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=78,priority=39000,actions=drop".
+Fri Nov 6 09:34:54 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Nov 6 09:34:54 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Fri Nov 6 09:34:54 2020 [Z0][VM][I]: New LCM state is RUNNING
+Fri Nov 6 11:05:29 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Fri Nov 6 11:06:05 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Nov 6 11:06:05 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Fri Nov 6 11:06:06 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=78".
+Fri Nov 6 11:06:06 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Nov 6 11:06:06 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Fri Nov 6 11:06:06 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Fri Nov 6 11:12:03 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Fri Nov 6 11:12:03 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Mon Nov 9 12:01:42 2020 [Z0][VM][I]: New state is PENDING
+Mon Nov 9 12:01:45 2020 [Z0][VM][I]: New state is ACTIVE
+Mon Nov 9 12:01:45 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Mon Nov 9 12:12:09 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Mon Nov 9 12:12:09 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.7
+Mon Nov 9 12:12:09 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Mon Nov 9 12:12:09 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 9 12:12:09 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Mon Nov 9 12:12:11 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 9 12:12:11 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Mon Nov 9 12:12:11 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Mon Nov 9 12:12:11 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=82,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Mon Nov 9 12:12:11 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=82,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Mon Nov 9 12:12:11 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=82,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Mon Nov 9 12:12:11 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=82,priority=39000,actions=drop".
+Mon Nov 9 12:12:11 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 9 12:12:11 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Mon Nov 9 12:12:11 2020 [Z0][VM][I]: New LCM state is RUNNING
+Mon Nov 9 22:11:01 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Mon Nov 9 22:11:37 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 9 22:11:37 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Mon Nov 9 22:11:37 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=82".
+Mon Nov 9 22:11:37 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 9 22:11:37 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Mon Nov 9 22:11:37 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Mon Nov 9 22:17:49 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Mon Nov 9 22:17:49 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Tue Nov 10 11:56:03 2020 [Z0][VM][I]: New state is PENDING
+Tue Nov 10 11:56:12 2020 [Z0][VM][I]: New state is ACTIVE
+Tue Nov 10 11:56:12 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Tue Nov 10 12:07:13 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Tue Nov 10 12:07:13 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.8
+Tue Nov 10 12:07:14 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Tue Nov 10 12:07:14 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 10 12:07:14 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Tue Nov 10 12:07:17 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 10 12:07:17 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Tue Nov 10 12:07:17 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Tue Nov 10 12:07:17 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=4,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Tue Nov 10 12:07:17 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=4,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Tue Nov 10 12:07:17 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=4,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Tue Nov 10 12:07:17 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=4,priority=39000,actions=drop".
+Tue Nov 10 12:07:17 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 10 12:07:17 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Tue Nov 10 12:07:17 2020 [Z0][VM][I]: New LCM state is RUNNING
+Tue Nov 10 15:02:11 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Tue Nov 10 15:02:40 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 10 15:02:40 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Tue Nov 10 15:02:40 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=4".
+Tue Nov 10 15:02:40 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 10 15:02:40 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Tue Nov 10 15:02:40 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Tue Nov 10 15:08:29 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Tue Nov 10 15:08:29 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Mon Nov 16 08:39:37 2020 [Z0][VM][I]: New state is PENDING
+Mon Nov 16 08:39:40 2020 [Z0][VM][I]: New state is ACTIVE
+Mon Nov 16 08:39:40 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Mon Nov 16 08:51:10 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Mon Nov 16 08:51:10 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.9
+Mon Nov 16 08:51:10 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Mon Nov 16 08:51:10 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 16 08:51:10 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Mon Nov 16 08:51:12 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 16 08:51:12 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Mon Nov 16 08:51:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Mon Nov 16 08:51:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=257,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Mon Nov 16 08:51:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=257,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Mon Nov 16 08:51:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=257,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Mon Nov 16 08:51:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=257,priority=39000,actions=drop".
+Mon Nov 16 08:51:12 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 16 08:51:12 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Mon Nov 16 08:51:12 2020 [Z0][VM][I]: New LCM state is RUNNING
+Mon Nov 16 09:47:01 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Mon Nov 16 09:47:37 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 16 09:47:37 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Mon Nov 16 09:47:37 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=257".
+Mon Nov 16 09:47:37 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Nov 16 09:47:37 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Mon Nov 16 09:47:37 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Mon Nov 16 09:53:30 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Mon Nov 16 09:53:30 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Tue Nov 17 14:49:58 2020 [Z0][VM][I]: New state is PENDING
+Tue Nov 17 14:49:59 2020 [Z0][VM][I]: New state is ACTIVE
+Tue Nov 17 14:49:59 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Tue Nov 17 15:02:34 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Tue Nov 17 15:02:34 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.10
+Tue Nov 17 15:02:35 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Tue Nov 17 15:02:35 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 17 15:02:35 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Tue Nov 17 15:02:35 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 17 15:02:35 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Tue Nov 17 15:02:36 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Tue Nov 17 15:02:36 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=45,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Tue Nov 17 15:02:36 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=45,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Tue Nov 17 15:02:36 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=45,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Tue Nov 17 15:02:36 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=45,priority=39000,actions=drop".
+Tue Nov 17 15:02:36 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 17 15:02:36 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Tue Nov 17 15:02:36 2020 [Z0][VM][I]: New LCM state is RUNNING
+Tue Nov 17 20:22:46 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Tue Nov 17 20:23:22 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 17 20:23:22 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Tue Nov 17 20:23:22 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=45".
+Tue Nov 17 20:23:22 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Nov 17 20:23:22 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Tue Nov 17 20:23:22 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Tue Nov 17 20:29:10 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Tue Nov 17 20:29:10 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Wed Nov 18 09:02:32 2020 [Z0][VM][I]: New state is PENDING
+Wed Nov 18 09:02:33 2020 [Z0][VM][I]: New state is ACTIVE
+Wed Nov 18 09:02:33 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Wed Nov 18 09:12:24 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Wed Nov 18 09:12:24 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.11
+Wed Nov 18 09:12:25 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Wed Nov 18 09:12:25 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Nov 18 09:12:25 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Wed Nov 18 09:12:25 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Nov 18 09:12:25 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Wed Nov 18 09:12:26 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Wed Nov 18 09:12:26 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=58,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Wed Nov 18 09:12:26 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=58,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Wed Nov 18 09:12:26 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=58,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Wed Nov 18 09:12:26 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=58,priority=39000,actions=drop".
+Wed Nov 18 09:12:26 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Nov 18 09:12:26 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Wed Nov 18 09:12:26 2020 [Z0][VM][I]: New LCM state is RUNNING
+Wed Nov 18 10:55:08 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Wed Nov 18 10:55:44 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Nov 18 10:55:44 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Wed Nov 18 10:55:45 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=58".
+Wed Nov 18 10:55:45 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Nov 18 10:55:45 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Wed Nov 18 10:55:45 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Wed Nov 18 11:01:59 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Wed Nov 18 11:01:59 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Thu Dec 3 09:48:58 2020 [Z0][VM][I]: New state is PENDING
+Thu Dec 3 09:49:04 2020 [Z0][VM][I]: New state is ACTIVE
+Thu Dec 3 09:49:04 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Thu Dec 3 09:59:52 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Thu Dec 3 09:59:52 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.12
+Thu Dec 3 09:59:53 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Thu Dec 3 09:59:53 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 3 09:59:53 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Thu Dec 3 09:59:54 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 3 09:59:54 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Thu Dec 3 09:59:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Thu Dec 3 09:59:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=245,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Thu Dec 3 09:59:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=245,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Thu Dec 3 09:59:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=245,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Thu Dec 3 09:59:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=245,priority=39000,actions=drop".
+Thu Dec 3 09:59:54 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 3 09:59:54 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Thu Dec 3 09:59:54 2020 [Z0][VM][I]: New LCM state is RUNNING
+Thu Dec 3 12:24:34 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_POWEROFF
+Thu Dec 3 12:25:10 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 3 12:25:10 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Thu Dec 3 12:25:10 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=245".
+Thu Dec 3 12:25:10 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 3 12:25:10 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Thu Dec 3 12:25:10 2020 [Z0][VM][I]: New state is POWEROFF
+Thu Dec 3 12:25:10 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Thu Dec 3 15:38:39 2020 [Z0][VM][I]: New state is ACTIVE
+Thu Dec 3 15:38:39 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Thu Dec 3 15:44:38 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Thu Dec 3 15:44:38 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Mon Dec 7 08:57:24 2020 [Z0][VM][I]: New state is PENDING
+Mon Dec 7 08:57:31 2020 [Z0][VM][I]: New state is ACTIVE
+Mon Dec 7 08:57:31 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Mon Dec 7 09:07:52 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Mon Dec 7 09:07:52 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.13
+Mon Dec 7 09:07:52 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Mon Dec 7 09:07:52 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Dec 7 09:07:52 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Mon Dec 7 09:07:54 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Dec 7 09:07:54 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Mon Dec 7 09:07:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Mon Dec 7 09:07:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=14,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Mon Dec 7 09:07:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=14,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Mon Dec 7 09:07:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=14,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Mon Dec 7 09:07:54 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=14,priority=39000,actions=drop".
+Mon Dec 7 09:07:54 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Dec 7 09:07:54 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Mon Dec 7 09:07:54 2020 [Z0][VM][I]: New LCM state is RUNNING
+Mon Dec 7 11:34:37 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Mon Dec 7 11:35:13 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Dec 7 11:35:13 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Mon Dec 7 11:35:13 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=14".
+Mon Dec 7 11:35:13 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Dec 7 11:35:13 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Mon Dec 7 11:35:13 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Mon Dec 7 11:40:57 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Mon Dec 7 11:40:57 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Thu Dec 10 11:05:56 2020 [Z0][VM][I]: New state is PENDING
+Thu Dec 10 11:06:05 2020 [Z0][VM][I]: New state is ACTIVE
+Thu Dec 10 11:06:05 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Thu Dec 10 11:16:50 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Thu Dec 10 11:16:50 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.14
+Thu Dec 10 11:16:51 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Thu Dec 10 11:16:51 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 10 11:16:51 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Thu Dec 10 11:16:52 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 10 11:16:52 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Thu Dec 10 11:16:52 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Thu Dec 10 11:16:52 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=18,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Thu Dec 10 11:16:52 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=18,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Thu Dec 10 11:16:52 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=18,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Thu Dec 10 11:16:52 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=18,priority=39000,actions=drop".
+Thu Dec 10 11:16:52 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 10 11:16:52 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Thu Dec 10 11:16:52 2020 [Z0][VM][I]: New LCM state is RUNNING
+Thu Dec 10 18:30:15 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Thu Dec 10 18:30:50 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 10 18:30:50 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Thu Dec 10 18:30:51 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=18".
+Thu Dec 10 18:30:51 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 10 18:30:51 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Thu Dec 10 18:30:51 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Thu Dec 10 18:37:02 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Thu Dec 10 18:37:02 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Fri Dec 11 10:44:23 2020 [Z0][VM][I]: New state is PENDING
+Fri Dec 11 10:44:31 2020 [Z0][VM][I]: New state is ACTIVE
+Fri Dec 11 10:44:31 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Fri Dec 11 10:56:22 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Fri Dec 11 10:56:22 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.15
+Fri Dec 11 10:56:22 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Fri Dec 11 10:56:22 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Dec 11 10:56:22 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Fri Dec 11 10:56:23 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Dec 11 10:56:23 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Fri Dec 11 10:56:24 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Fri Dec 11 10:56:24 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=39,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Fri Dec 11 10:56:24 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=39,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Fri Dec 11 10:56:24 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=39,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Fri Dec 11 10:56:24 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=39,priority=39000,actions=drop".
+Fri Dec 11 10:56:24 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Dec 11 10:56:24 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Fri Dec 11 10:56:24 2020 [Z0][VM][I]: New LCM state is RUNNING
+Fri Dec 11 16:00:13 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Fri Dec 11 16:00:48 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Dec 11 16:00:48 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Fri Dec 11 16:00:48 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=39".
+Fri Dec 11 16:00:48 2020 [Z0][VMM][I]: ExitCode: 0
+Fri Dec 11 16:00:48 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Fri Dec 11 16:00:48 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Fri Dec 11 16:06:59 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Fri Dec 11 16:06:59 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Mon Dec 14 10:23:51 2020 [Z0][VM][I]: New state is PENDING
+Mon Dec 14 10:24:02 2020 [Z0][VM][I]: New state is ACTIVE
+Mon Dec 14 10:24:02 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Mon Dec 14 10:37:07 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Mon Dec 14 10:37:07 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.16
+Mon Dec 14 10:37:08 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Mon Dec 14 10:37:08 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Dec 14 10:37:08 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Mon Dec 14 10:37:09 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Dec 14 10:37:09 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Mon Dec 14 10:37:09 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Mon Dec 14 10:37:09 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=42,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Mon Dec 14 10:37:09 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=42,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Mon Dec 14 10:37:09 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=42,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Mon Dec 14 10:37:09 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=42,priority=39000,actions=drop".
+Mon Dec 14 10:37:09 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Dec 14 10:37:09 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Mon Dec 14 10:37:09 2020 [Z0][VM][I]: New LCM state is RUNNING
+Tue Dec 15 22:32:00 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Tue Dec 15 22:32:36 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Dec 15 22:32:36 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Tue Dec 15 22:32:36 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=42".
+Tue Dec 15 22:32:36 2020 [Z0][VMM][I]: ExitCode: 0
+Tue Dec 15 22:32:36 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Tue Dec 15 22:32:36 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Tue Dec 15 22:38:54 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Tue Dec 15 22:38:54 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Wed Dec 16 09:08:12 2020 [Z0][VM][I]: New state is PENDING
+Wed Dec 16 09:08:15 2020 [Z0][VM][I]: New state is ACTIVE
+Wed Dec 16 09:08:15 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Wed Dec 16 09:20:50 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Wed Dec 16 09:20:50 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.17
+Wed Dec 16 09:20:50 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Wed Dec 16 09:20:50 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Dec 16 09:20:50 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Wed Dec 16 09:20:52 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Dec 16 09:20:52 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Wed Dec 16 09:20:52 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Wed Dec 16 09:20:52 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=70,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Wed Dec 16 09:20:52 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=70,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Wed Dec 16 09:20:52 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=70,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Wed Dec 16 09:20:52 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=70,priority=39000,actions=drop".
+Wed Dec 16 09:20:52 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Dec 16 09:20:52 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Wed Dec 16 09:20:52 2020 [Z0][VM][I]: New LCM state is RUNNING
+Wed Dec 16 21:47:30 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Wed Dec 16 21:48:06 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Dec 16 21:48:06 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Wed Dec 16 21:48:06 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=70".
+Wed Dec 16 21:48:06 2020 [Z0][VMM][I]: ExitCode: 0
+Wed Dec 16 21:48:06 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Wed Dec 16 21:48:06 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Wed Dec 16 21:54:32 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Wed Dec 16 21:54:32 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Thu Dec 17 08:44:51 2020 [Z0][VM][I]: New state is PENDING
+Thu Dec 17 08:44:52 2020 [Z0][VM][I]: New state is ACTIVE
+Thu Dec 17 08:44:52 2020 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Thu Dec 17 08:57:10 2020 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Thu Dec 17 08:57:10 2020 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.18
+Thu Dec 17 08:57:10 2020 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Thu Dec 17 08:57:10 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 17 08:57:10 2020 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Thu Dec 17 08:57:12 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 17 08:57:12 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Thu Dec 17 08:57:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Thu Dec 17 08:57:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=75,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Thu Dec 17 08:57:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=75,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Thu Dec 17 08:57:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=75,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Thu Dec 17 08:57:12 2020 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=75,priority=39000,actions=drop".
+Thu Dec 17 08:57:12 2020 [Z0][VMM][I]: ExitCode: 0
+Thu Dec 17 08:57:12 2020 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Thu Dec 17 08:57:12 2020 [Z0][VM][I]: New LCM state is RUNNING
+Mon Dec 21 11:15:30 2020 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Mon Dec 21 11:16:06 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Dec 21 11:16:06 2020 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Mon Dec 21 11:16:06 2020 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=75".
+Mon Dec 21 11:16:06 2020 [Z0][VMM][I]: ExitCode: 0
+Mon Dec 21 11:16:06 2020 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Mon Dec 21 11:16:06 2020 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Mon Dec 21 11:22:36 2020 [Z0][VM][I]: New state is UNDEPLOYED
+Mon Dec 21 11:22:36 2020 [Z0][VM][I]: New LCM state is LCM_INIT
+Mon Jan 4 08:31:18 2021 [Z0][VM][I]: New state is PENDING
+Mon Jan 4 08:31:20 2021 [Z0][VM][I]: New state is ACTIVE
+Mon Jan 4 08:31:20 2021 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Mon Jan 4 08:43:42 2021 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Mon Jan 4 08:43:42 2021 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.19
+Mon Jan 4 08:43:42 2021 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Mon Jan 4 08:43:43 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Jan 4 08:43:43 2021 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Mon Jan 4 08:43:44 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Jan 4 08:43:44 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Mon Jan 4 08:43:44 2021 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Mon Jan 4 08:43:44 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=122,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Mon Jan 4 08:43:44 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=122,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Mon Jan 4 08:43:44 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=122,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Mon Jan 4 08:43:44 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=122,priority=39000,actions=drop".
+Mon Jan 4 08:43:44 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Jan 4 08:43:44 2021 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Mon Jan 4 08:43:44 2021 [Z0][VM][I]: New LCM state is RUNNING
+Mon Jan 4 22:57:30 2021 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Mon Jan 4 22:58:06 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Jan 4 22:58:06 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Mon Jan 4 22:58:06 2021 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=122".
+Mon Jan 4 22:58:06 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Jan 4 22:58:06 2021 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Mon Jan 4 22:58:06 2021 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Mon Jan 4 23:04:39 2021 [Z0][VM][I]: New state is UNDEPLOYED
+Mon Jan 4 23:04:39 2021 [Z0][VM][I]: New LCM state is LCM_INIT
+Fri Jan 15 14:59:05 2021 [Z0][VM][I]: New state is PENDING
+Fri Jan 15 14:59:11 2021 [Z0][VM][I]: New state is ACTIVE
+Fri Jan 15 14:59:11 2021 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Fri Jan 15 15:12:33 2021 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Fri Jan 15 15:12:33 2021 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.20
+Fri Jan 15 15:12:33 2021 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Fri Jan 15 15:12:33 2021 [Z0][VMM][I]: ExitCode: 0
+Fri Jan 15 15:12:33 2021 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Fri Jan 15 15:12:35 2021 [Z0][VMM][I]: ExitCode: 0
+Fri Jan 15 15:12:35 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Fri Jan 15 15:12:35 2021 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Fri Jan 15 15:12:35 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=10,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Fri Jan 15 15:12:35 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=10,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Fri Jan 15 15:12:35 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=10,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Fri Jan 15 15:12:35 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=10,priority=39000,actions=drop".
+Fri Jan 15 15:12:35 2021 [Z0][VMM][I]: ExitCode: 0
+Fri Jan 15 15:12:35 2021 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Fri Jan 15 15:12:35 2021 [Z0][VM][I]: New LCM state is RUNNING
+Tue Jan 19 23:11:34 2021 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Tue Jan 19 23:12:09 2021 [Z0][VMM][I]: ExitCode: 0
+Tue Jan 19 23:12:09 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Tue Jan 19 23:12:10 2021 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=10".
+Tue Jan 19 23:12:10 2021 [Z0][VMM][I]: ExitCode: 0
+Tue Jan 19 23:12:10 2021 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Tue Jan 19 23:12:10 2021 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Tue Jan 19 23:17:58 2021 [Z0][VM][I]: New state is UNDEPLOYED
+Tue Jan 19 23:17:58 2021 [Z0][VM][I]: New LCM state is LCM_INIT
+Tue Jan 26 09:58:35 2021 [Z0][VM][I]: New state is PENDING
+Tue Jan 26 12:16:30 2021 [Z0][VM][I]: New state is HOLD
+Tue Jan 26 12:17:16 2021 [Z0][VM][I]: New state is PENDING
+Tue Jan 26 12:17:17 2021 [Z0][VM][I]: New state is ACTIVE
+Tue Jan 26 12:17:17 2021 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Tue Jan 26 12:31:03 2021 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Tue Jan 26 12:31:03 2021 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.21
+Tue Jan 26 12:31:03 2021 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Tue Jan 26 12:31:04 2021 [Z0][VMM][I]: ExitCode: 0
+Tue Jan 26 12:31:04 2021 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Tue Jan 26 12:31:04 2021 [Z0][VMM][I]: ExitCode: 0
+Tue Jan 26 12:31:04 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Tue Jan 26 12:31:04 2021 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Tue Jan 26 12:31:04 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=69,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Tue Jan 26 12:31:04 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=69,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Tue Jan 26 12:31:04 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=69,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Tue Jan 26 12:31:04 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=69,priority=39000,actions=drop".
+Tue Jan 26 12:31:04 2021 [Z0][VMM][I]: ExitCode: 0
+Tue Jan 26 12:31:04 2021 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Tue Jan 26 12:31:04 2021 [Z0][VM][I]: New LCM state is RUNNING
+Mon Feb 1 09:55:54 2021 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Mon Feb 1 09:56:31 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Feb 1 09:56:31 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Mon Feb 1 09:56:31 2021 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=69".
+Mon Feb 1 09:56:31 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Feb 1 09:56:31 2021 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Mon Feb 1 09:56:31 2021 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Mon Feb 1 10:02:49 2021 [Z0][VM][I]: New state is UNDEPLOYED
+Mon Feb 1 10:02:49 2021 [Z0][VM][I]: New LCM state is LCM_INIT
+Tue Feb 2 14:37:45 2021 [Z0][VM][I]: New state is PENDING
+Tue Feb 2 14:37:54 2021 [Z0][VM][I]: New state is ACTIVE
+Tue Feb 2 14:37:54 2021 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Tue Feb 2 14:49:38 2021 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Tue Feb 2 14:49:38 2021 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.22
+Tue Feb 2 14:49:39 2021 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Tue Feb 2 14:49:39 2021 [Z0][VMM][I]: ExitCode: 0
+Tue Feb 2 14:49:39 2021 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Tue Feb 2 14:49:39 2021 [Z0][VMM][I]: ExitCode: 0
+Tue Feb 2 14:49:39 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Tue Feb 2 14:49:40 2021 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Tue Feb 2 14:49:40 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=72,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Tue Feb 2 14:49:40 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=72,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Tue Feb 2 14:49:40 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=72,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Tue Feb 2 14:49:40 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=72,priority=39000,actions=drop".
+Tue Feb 2 14:49:40 2021 [Z0][VMM][I]: ExitCode: 0
+Tue Feb 2 14:49:40 2021 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Tue Feb 2 14:49:40 2021 [Z0][VM][I]: New LCM state is RUNNING
+Thu Feb 4 12:27:49 2021 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Thu Feb 4 12:28:25 2021 [Z0][VMM][I]: ExitCode: 0
+Thu Feb 4 12:28:25 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Thu Feb 4 12:28:25 2021 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=72".
+Thu Feb 4 12:28:25 2021 [Z0][VMM][I]: ExitCode: 0
+Thu Feb 4 12:28:25 2021 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Thu Feb 4 12:28:25 2021 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Thu Feb 4 12:34:37 2021 [Z0][VM][I]: New state is UNDEPLOYED
+Thu Feb 4 12:34:37 2021 [Z0][VM][I]: New LCM state is LCM_INIT
+Mon Feb 8 13:44:15 2021 [Z0][VM][I]: New state is PENDING
+Mon Feb 8 13:44:24 2021 [Z0][VM][I]: New state is ACTIVE
+Mon Feb 8 13:44:24 2021 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Mon Feb 8 13:58:21 2021 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Mon Feb 8 13:58:21 2021 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.23
+Mon Feb 8 13:58:21 2021 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Mon Feb 8 13:58:22 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Feb 8 13:58:22 2021 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Mon Feb 8 13:58:24 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Feb 8 13:58:24 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Mon Feb 8 13:58:24 2021 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Mon Feb 8 13:58:24 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=101,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Mon Feb 8 13:58:24 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=101,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Mon Feb 8 13:58:24 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=101,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Mon Feb 8 13:58:24 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=101,priority=39000,actions=drop".
+Mon Feb 8 13:58:24 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Feb 8 13:58:24 2021 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Mon Feb 8 13:58:24 2021 [Z0][VM][I]: New LCM state is RUNNING
+Thu Apr 1 15:05:25 2021 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Thu Apr 1 15:06:02 2021 [Z0][VMM][I]: ExitCode: 0
+Thu Apr 1 15:06:02 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Thu Apr 1 15:06:02 2021 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=101".
+Thu Apr 1 15:06:02 2021 [Z0][VMM][I]: ExitCode: 0
+Thu Apr 1 15:06:02 2021 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Thu Apr 1 15:06:02 2021 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Thu Apr 1 15:12:15 2021 [Z0][VM][I]: New state is UNDEPLOYED
+Thu Apr 1 15:12:15 2021 [Z0][VM][I]: New LCM state is LCM_INIT
+Mon Apr 12 00:21:29 2021 [Z0][VM][I]: New state is PENDING
+Mon Apr 12 00:21:35 2021 [Z0][VM][I]: New state is ACTIVE
+Mon Apr 12 00:21:35 2021 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Mon Apr 12 00:38:03 2021 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Mon Apr 12 00:38:03 2021 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.24
+Mon Apr 12 00:38:04 2021 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Mon Apr 12 00:38:04 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Apr 12 00:38:04 2021 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Mon Apr 12 00:38:05 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Apr 12 00:38:05 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Mon Apr 12 00:38:06 2021 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Mon Apr 12 00:38:06 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=111,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Mon Apr 12 00:38:06 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=111,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Mon Apr 12 00:38:06 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=111,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Mon Apr 12 00:38:06 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=111,priority=39000,actions=drop".
+Mon Apr 12 00:38:06 2021 [Z0][VMM][I]: ExitCode: 0
+Mon Apr 12 00:38:06 2021 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Mon Apr 12 00:38:06 2021 [Z0][VM][I]: New LCM state is RUNNING
+Fri May 7 16:00:18 2021 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Fri May 7 16:00:55 2021 [Z0][VMM][I]: ExitCode: 0
+Fri May 7 16:00:55 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Fri May 7 16:00:55 2021 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=111".
+Fri May 7 16:00:55 2021 [Z0][VMM][I]: ExitCode: 0
+Fri May 7 16:00:55 2021 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Fri May 7 16:00:55 2021 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Fri May 7 16:07:38 2021 [Z0][VM][I]: New state is UNDEPLOYED
+Fri May 7 16:07:38 2021 [Z0][VM][I]: New LCM state is LCM_INIT
+Thu May 20 14:09:14 2021 [Z0][VM][I]: New state is PENDING
+Thu May 20 14:09:22 2021 [Z0][VM][I]: New state is ACTIVE
+Thu May 20 14:09:22 2021 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Thu May 20 14:23:42 2021 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Thu May 20 14:23:42 2021 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.25
+Thu May 20 14:23:43 2021 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Thu May 20 14:23:43 2021 [Z0][VMM][I]: ExitCode: 0
+Thu May 20 14:23:43 2021 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Thu May 20 14:23:44 2021 [Z0][VMM][I]: ExitCode: 0
+Thu May 20 14:23:44 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Thu May 20 14:23:45 2021 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Thu May 20 14:23:45 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=46,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Thu May 20 14:23:45 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=46,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Thu May 20 14:23:45 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=46,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Thu May 20 14:23:45 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=46,priority=39000,actions=drop".
+Thu May 20 14:23:45 2021 [Z0][VMM][I]: ExitCode: 0
+Thu May 20 14:23:45 2021 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Thu May 20 14:23:45 2021 [Z0][VM][I]: New LCM state is RUNNING
+Tue May 25 15:23:36 2021 [Z0][VM][I]: New LCM state is SHUTDOWN_UNDEPLOY
+Tue May 25 15:24:12 2021 [Z0][VMM][I]: ExitCode: 0
+Tue May 25 15:24:12 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: shutdown.
+Tue May 25 15:24:12 2021 [Z0][VMM][I]: clean: Executed "sudo ovs-ofctl del-flows ovsbridge0 in_port=46".
+Tue May 25 15:24:12 2021 [Z0][VMM][I]: ExitCode: 0
+Tue May 25 15:24:12 2021 [Z0][VMM][I]: Successfully execute network driver operation: clean.
+Tue May 25 15:24:12 2021 [Z0][VM][I]: New LCM state is EPILOG_UNDEPLOY
+Tue May 25 15:30:45 2021 [Z0][VM][I]: New state is UNDEPLOYED
+Tue May 25 15:30:45 2021 [Z0][VM][I]: New LCM state is LCM_INIT
+Sat May 29 14:03:00 2021 [Z0][VM][I]: New state is PENDING
+Sat May 29 14:03:05 2021 [Z0][VM][I]: New state is ACTIVE
+Sat May 29 14:03:05 2021 [Z0][VM][I]: New LCM state is PROLOG_UNDEPLOY
+Sat May 29 14:17:50 2021 [Z0][VM][I]: New LCM state is BOOT_UNDEPLOY
+Sat May 29 14:17:50 2021 [Z0][VMM][I]: Generating deployment file: /var/lib/one/vms/89518/deployment.26
+Sat May 29 14:17:51 2021 [Z0][VMM][I]: Successfully execute transfer manager driver operation: tm_context.
+Sat May 29 14:17:51 2021 [Z0][VMM][I]: ExitCode: 0
+Sat May 29 14:17:51 2021 [Z0][VMM][I]: Successfully execute network driver operation: pre.
+Sat May 29 14:17:55 2021 [Z0][VMM][I]: ExitCode: 0
+Sat May 29 14:17:55 2021 [Z0][VMM][I]: Successfully execute virtualization driver operation: deploy.
+Sat May 29 14:17:56 2021 [Z0][VMM][I]: post: Executed "sudo ovs-vsctl set Port one-89518-0 tag=56".
+Sat May 29 14:17:56 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=292,arp,dl_src=04:00:91:64:3b:e7,priority=45000,actions=drop".
+Sat May 29 14:17:56 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=292,arp,dl_src=04:00:91:64:3b:e7,nw_src=145.100.59.231,priority=46000,actions=normal".
+Sat May 29 14:17:56 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=292,dl_src=04:00:91:64:3b:e7,priority=40000,actions=normal".
+Sat May 29 14:17:56 2021 [Z0][VMM][I]: post: Executed "sudo ovs-ofctl add-flow ovsbridge0 in_port=292,priority=39000,actions=drop".
+Sat May 29 14:17:56 2021 [Z0][VMM][I]: ExitCode: 0
+Sat May 29 14:17:56 2021 [Z0][VMM][I]: Successfully execute network driver operation: post.
+Sat May 29 14:17:56 2021 [Z0][VM][I]: New LCM state is RUNNING
