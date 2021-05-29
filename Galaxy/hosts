@@ -1,0 +1,9 @@
+[galaxyservers]
+UNRAVEL-Galaxy-Version-21-5.fairheartgalaxy-avans.surf-hosted.nl ansible_connection=local
+#fairheartgalaxy.bioinformatics-atgm.nl ansible_connection=local
+# [pulsarservers]
+# 145.100.57.146
+
+[monitoring]
+UNRAVEL-Galaxy-Version-21-5.fairheartgalaxy-avans.surf-hosted.nl ansible_connection=local
+#fairheartgalaxy.bioinformatics-atgm.nl ansible_connection=local
