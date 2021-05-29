@@ -8,6 +8,11 @@ The daemon is necessary for docker containers to be pulled and installed correct
 This list is made available in docker and is accessible using the link: 
 These IPs have to manually accessed. Finding them can be done through online websearchers or by using the wget function in linux with the EXACT URL!
 
+### Links to the IP-list
+Numbers 1-15: https://github.com/NielsMol/UNRAVEL-Galaxy/blob/main/Issues/IP-list-DRE_1-15.png
+ 
+Numbers 15-28:https://github.com/NielsMol/UNRAVEL-Galaxy/blob/main/Issues/IP-list-DRE_15-28.png
+
 ## The Outdated Certifications
 Cerbot certifications do not always get automatically renewed and sometimes need some manual processing to place the ssl-certificates in the right directories. An explanation about this is added in the README of the Galaxy directory in this GitHub page.
 
