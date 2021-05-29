@@ -1,0 +1,824 @@
+{
+    "a_galaxy_workflow": "true",
+    "annotation": "",
+    "format-version": "0.1",
+    "name": "Workflow constructed from history 'Re:do Limma-Voom'",
+    "steps": {
+        "0": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 0,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Galaxy7-Column_join_featurecounts_MYBPC3-limma.txt"
+                }
+            ],
+            "label": "Galaxy7-Column_join_featurecounts_MYBPC3-limma.txt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 68.33749771118164,
+                "height": 101,
+                "left": 378,
+                "right": 578,
+                "top": -32.66250228881836,
+                "width": 200,
+                "x": 378,
+                "y": -32.66250228881836
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "8cc505d3-b01a-4a15-aede-dbeceba64de2",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "1caaa414-5c76-48b9-9e48-0b6b6b63dd54"
+                }
+            ]
+        },
+        "1": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 1,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Galaxy-E99K-Featurecounts.txt"
+                }
+            ],
+            "label": "Galaxy-E99K-Featurecounts.txt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 657.2125244140625,
+                "height": 81,
+                "left": 164,
+                "right": 364,
+                "top": 576.2125244140625,
+                "width": 200,
+                "x": 164,
+                "y": 576.2125244140625
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "922a1a56-c37c-4b07-919b-58e813ab7a15",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "cca0ae22-354d-4fb7-b455-72237be454dd"
+                }
+            ]
+        },
+        "2": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 2,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Factor_information_MYBPC3-data_limma_input.txt"
+                }
+            ],
+            "label": "Factor_information_MYBPC3-data_limma_input.txt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 209.8125,
+                "height": 101,
+                "left": 633,
+                "right": 833,
+                "top": 108.8125,
+                "width": 200,
+                "x": 633,
+                "y": 108.8125
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "eb47102b-5e9c-4d2d-a0d5-9058db9fafef",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "748c63f6-7c58-44bc-a82a-85b0e409d1fd"
+                }
+            ]
+        },
+        "3": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 3,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Contrasts_file_limma-voom_Nottingham-data.txt"
+                }
+            ],
+            "label": "Contrasts_file_limma-voom_Nottingham-data.txt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": -71.21250915527344,
+                "height": 101,
+                "left": 692,
+                "right": 892,
+                "top": -172.21250915527344,
+                "width": 200,
+                "x": 692,
+                "y": -172.21250915527344
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "d822b3e2-ff3e-493d-bdd6-5e5736e28c51",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "2045c848-858a-4946-87c2-cdbff8866685"
+                }
+            ]
+        },
+        "4": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 4,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Galaxy-All_Nottingham_2D-3D_datasets_counts.txt"
+                }
+            ],
+            "label": "Galaxy-All_Nottingham_2D-3D_datasets_counts.txt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": -466.0625,
+                "height": 101,
+                "left": 447,
+                "right": 647,
+                "top": -567.0625,
+                "width": 200,
+                "x": 447,
+                "y": -567.0625
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "88c3b5cd-bf1c-47b3-b637-810e3cddff40",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "15af8013-809c-43d6-bde4-c0bb46f87d06"
+                }
+            ]
+        },
+        "5": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 5,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Contrasts_file_limma-voom_MYBPC3-data.txt"
+                }
+            ],
+            "label": "Contrasts_file_limma-voom_MYBPC3-data.txt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 478.6125183105469,
+                "height": 101,
+                "left": 631,
+                "right": 831,
+                "top": 377.6125183105469,
+                "width": 200,
+                "x": 631,
+                "y": 377.6125183105469
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "2dfa5ef2-050e-422f-ac3e-561beacad8d2",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "40347e06-edd6-44f6-a57a-6d99f351cef3"
+                }
+            ]
+        },
+        "6": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 6,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Factor_information_Diogo_All-lines_limma_input.txt"
+                }
+            ],
+            "label": "Factor_information_Diogo_All-lines_limma_input.txt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": -349.0625,
+                "height": 101,
+                "left": 686,
+                "right": 886,
+                "top": -450.0625,
+                "width": 200,
+                "x": 686,
+                "y": -450.0625
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "daa9d92f-c0eb-45b8-89be-f012e70d8c86",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "ef0522d2-7040-44ce-8b82-f538c6e03ee0"
+                }
+            ]
+        },
+        "7": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 7,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Factors_file_E99K.txt"
+                }
+            ],
+            "label": "Factors_file_E99K.txt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 849.0125122070312,
+                "height": 81,
+                "left": 449,
+                "right": 649,
+                "top": 768.0125122070312,
+                "width": 200,
+                "x": 449,
+                "y": 768.0125122070312
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "1e972ac9-cddc-4426-af75-f516709a011c",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "8b61bfad-be4a-4de4-b881-41923243cf01"
+                }
+            ]
+        },
+        "8": {
+            "annotation": "",
+            "content_id": null,
+            "errors": null,
+            "id": 8,
+            "input_connections": {},
+            "inputs": [
+                {
+                    "description": "",
+                    "name": "Contrasts_file_E99K.txt"
+                }
+            ],
+            "label": "Contrasts_file_E99K.txt",
+            "name": "Input dataset",
+            "outputs": [],
+            "position": {
+                "bottom": 1106.2125244140625,
+                "height": 81,
+                "left": 448,
+                "right": 648,
+                "top": 1025.2125244140625,
+                "width": 200,
+                "x": 448,
+                "y": 1025.2125244140625
+            },
+            "tool_id": null,
+            "tool_state": "{\"optional\": false}",
+            "tool_version": null,
+            "type": "data_input",
+            "uuid": "e93afaa6-c2d0-49b1-9526-34011b82cab5",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "output",
+                    "uuid": "bd82a68b-cd63-49af-8b57-70da36f9e48b"
+                }
+            ]
+        },
+        "9": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/annotatemyids/annotatemyids/3.12.0",
+            "errors": null,
+            "id": 9,
+            "input_connections": {
+                "id_file": {
+                    "id": 0,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "annotateMyIDs",
+            "outputs": [
+                {
+                    "name": "out_tab",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": 370.40000915527344,
+                "height": 152,
+                "left": 633,
+                "right": 833,
+                "top": 218.40000915527344,
+                "width": 200,
+                "x": 633,
+                "y": 218.40000915527344
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/annotatemyids/annotatemyids/3.12.0",
+            "tool_shed_repository": {
+                "changeset_revision": "44018dd6b447",
+                "name": "annotatemyids",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__input_ext\": \"tabular\", \"chromInfo\": \"/opt/galaxy/tool-data/shared/ucsc/chrom/?.len\", \"file_has_header\": \"true\", \"id_file\": {\"__class__\": \"ConnectedValue\"}, \"id_type\": \"ENTREZID\", \"organism\": \"Hs\", \"output_cols\": [\"ENTREZID\", \"SYMBOL\", \"GENENAME\"], \"remove_dups\": \"false\", \"rscriptOpt\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.12.0",
+            "type": "tool",
+            "uuid": "f99584ae-3e07-43f9-8b59-9aee8322858a",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_tab",
+                    "uuid": "9eda57d1-753e-468b-8fdf-3b4af765ce21"
+                }
+            ]
+        },
+        "10": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/annotatemyids/annotatemyids/3.12.0",
+            "errors": null,
+            "id": 10,
+            "input_connections": {
+                "id_file": {
+                    "id": 1,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "annotateMyIDs",
+            "outputs": [
+                {
+                    "name": "out_tab",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": 1012.6124877929688,
+                "height": 152,
+                "left": 447,
+                "right": 647,
+                "top": 860.6124877929688,
+                "width": 200,
+                "x": 447,
+                "y": 860.6124877929688
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/annotatemyids/annotatemyids/3.12.0",
+            "tool_shed_repository": {
+                "changeset_revision": "44018dd6b447",
+                "name": "annotatemyids",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__input_ext\": \"tabular\", \"chromInfo\": \"/opt/galaxy/tool-data/shared/ucsc/chrom/hg19.len\", \"file_has_header\": \"false\", \"id_file\": null, \"id_type\": \"ENTREZID\", \"organism\": \"Hs\", \"output_cols\": [\"ENTREZID\", \"SYMBOL\", \"GENENAME\"], \"remove_dups\": \"false\", \"rscriptOpt\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.12.0",
+            "type": "tool",
+            "uuid": "feb926a4-78e9-4f66-82be-b2749e2a9a80",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_tab",
+                    "uuid": "09c838d2-0c0a-444f-b89b-37063612c876"
+                }
+            ]
+        },
+        "11": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/annotatemyids/annotatemyids/3.12.0",
+            "errors": null,
+            "id": 11,
+            "input_connections": {
+                "id_file": {
+                    "id": 4,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "annotateMyIDs",
+            "outputs": [
+                {
+                    "name": "out_tab",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": -184.78750610351562,
+                "height": 152,
+                "left": 691,
+                "right": 891,
+                "top": -336.7875061035156,
+                "width": 200,
+                "x": 691,
+                "y": -336.7875061035156
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/annotatemyids/annotatemyids/3.12.0",
+            "tool_shed_repository": {
+                "changeset_revision": "44018dd6b447",
+                "name": "annotatemyids",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__input_ext\": \"tabular\", \"chromInfo\": \"/opt/galaxy/tool-data/shared/ucsc/chrom/?.len\", \"file_has_header\": \"true\", \"id_file\": null, \"id_type\": \"ENTREZID\", \"organism\": \"Hs\", \"output_cols\": [\"ENTREZID\", \"SYMBOL\", \"GENENAME\"], \"remove_dups\": \"false\", \"rscriptOpt\": \"false\", \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.12.0",
+            "type": "tool",
+            "uuid": "431aced4-26bf-4250-9905-478d77860ec5",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "out_tab",
+                    "uuid": "f9b7f39f-2068-483d-9668-d06d422f4bed"
+                }
+            ]
+        },
+        "12": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/limma_voom/limma_voom/3.38.3+galaxy3",
+            "errors": null,
+            "id": 12,
+            "input_connections": {
+                "anno|geneanno": {
+                    "id": 9,
+                    "output_name": "out_tab"
+                },
+                "cont|cinfo": {
+                    "id": 5,
+                    "output_name": "output"
+                },
+                "input|counts": {
+                    "id": 0,
+                    "output_name": "output"
+                },
+                "input|fact|finfo": {
+                    "id": 2,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "limma",
+            "outputs": [
+                {
+                    "name": "outTables",
+                    "type": "input"
+                },
+                {
+                    "name": "outReport",
+                    "type": "html"
+                },
+                {
+                    "name": "outFilt",
+                    "type": "tabular"
+                },
+                {
+                    "name": "outNorm",
+                    "type": "tabular"
+                },
+                {
+                    "name": "rscript",
+                    "type": "txt"
+                },
+                {
+                    "name": "libinfo",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": 476.6000003814697,
+                "height": 452,
+                "left": 948,
+                "right": 1148,
+                "top": 24.600000381469727,
+                "width": 200,
+                "x": 948,
+                "y": 24.600000381469727
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/limma_voom/limma_voom/3.38.3+galaxy3",
+            "tool_shed_repository": {
+                "changeset_revision": "0921444c832d",
+                "name": "limma_voom",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__input_ext\": \"tabular\", \"adv\": {\"lfc\": \"0.0\", \"pVal\": \"0.05\", \"pAdjust\": \"BH\", \"treat\": \"false\", \"topgenes\": \"40\", \"normalisationOption\": \"TMM\", \"robOption\": \"true\"}, \"anno\": {\"annoOpt\": \"yes\", \"__current_case__\": 0, \"geneanno\": null}, \"chromInfo\": \"/opt/galaxy/tool-data/shared/ucsc/chrom/?.len\", \"cont\": {\"cfile\": \"yes\", \"__current_case__\": 0, \"cinfo\": {\"__class__\": \"ConnectedValue\"}}, \"deMethod\": {\"de_select\": \"voom\", \"__current_case__\": 0, \"weightOption\": \"false\"}, \"f\": {\"filt\": {\"filt_select\": \"no\", \"__current_case__\": 1}}, \"input\": {\"format\": \"matrix\", \"__current_case__\": 1, \"counts\": {\"__class__\": \"ConnectedValue\"}, \"fact\": {\"ffile\": \"yes\", \"__current_case__\": 0, \"finfo\": {\"__class__\": \"ConnectedValue\"}}}, \"out\": {\"plots\": [\"i\", \"d\", \"c\", \"b\", \"x\", \"m\", \"h\", \"s\"], \"filtCounts\": \"true\", \"normCounts\": \"true\", \"libinfo\": \"true\", \"rscript\": \"true\", \"rdaOption\": \"true\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.38.3+galaxy3",
+            "type": "tool",
+            "uuid": "e9fc7c5e-c8e8-4dd7-80a6-a80d9f9d1167",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "outFilt",
+                    "uuid": "828e94de-87e0-4eef-aeca-1ebcffbea732"
+                },
+                {
+                    "label": null,
+                    "output_name": "outReport",
+                    "uuid": "95723de0-4d83-4fb2-b805-7c981014d7ed"
+                },
+                {
+                    "label": null,
+                    "output_name": "outTables",
+                    "uuid": "897114c5-b6fb-43d2-aedf-702736da76b8"
+                },
+                {
+                    "label": null,
+                    "output_name": "libinfo",
+                    "uuid": "15833f42-7afb-4e35-972d-7ebfa07a2dd2"
+                },
+                {
+                    "label": null,
+                    "output_name": "rscript",
+                    "uuid": "9270360a-e12b-4fb9-a129-c7e7e5be41f7"
+                },
+                {
+                    "label": null,
+                    "output_name": "outNorm",
+                    "uuid": "530afea0-614f-4884-a4f8-0946d6cdbbaa"
+                }
+            ]
+        },
+        "13": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/limma_voom/limma_voom/3.38.3+galaxy3",
+            "errors": null,
+            "id": 13,
+            "input_connections": {
+                "anno|geneanno": {
+                    "id": 10,
+                    "output_name": "out_tab"
+                },
+                "cont|cinfo": {
+                    "id": 8,
+                    "output_name": "output"
+                },
+                "input|counts": {
+                    "id": 1,
+                    "output_name": "output"
+                },
+                "input|fact|finfo": {
+                    "id": 7,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "limma",
+            "outputs": [
+                {
+                    "name": "outTables",
+                    "type": "input"
+                },
+                {
+                    "name": "outReport",
+                    "type": "html"
+                },
+                {
+                    "name": "outFilt",
+                    "type": "tabular"
+                },
+                {
+                    "name": "outNorm",
+                    "type": "tabular"
+                },
+                {
+                    "name": "rscript",
+                    "type": "txt"
+                },
+                {
+                    "name": "libinfo",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": 1164.6124877929688,
+                "height": 452,
+                "left": 806,
+                "right": 1006,
+                "top": 712.6124877929688,
+                "width": 200,
+                "x": 806,
+                "y": 712.6124877929688
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/limma_voom/limma_voom/3.38.3+galaxy3",
+            "tool_shed_repository": {
+                "changeset_revision": "0921444c832d",
+                "name": "limma_voom",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__input_ext\": \"tabular\", \"adv\": {\"lfc\": \"0.0\", \"pVal\": \"0.05\", \"pAdjust\": \"BH\", \"treat\": \"false\", \"topgenes\": \"40\", \"normalisationOption\": \"TMM\", \"robOption\": \"true\"}, \"anno\": {\"annoOpt\": \"yes\", \"__current_case__\": 0, \"geneanno\": null}, \"chromInfo\": \"/opt/galaxy/tool-data/shared/ucsc/chrom/?.len\", \"cont\": {\"cfile\": \"yes\", \"__current_case__\": 0, \"cinfo\": {\"__class__\": \"ConnectedValue\"}}, \"deMethod\": {\"de_select\": \"voom\", \"__current_case__\": 0, \"weightOption\": \"false\"}, \"f\": {\"filt\": {\"filt_select\": \"no\", \"__current_case__\": 1}}, \"input\": {\"format\": \"matrix\", \"__current_case__\": 1, \"counts\": {\"__class__\": \"ConnectedValue\"}, \"fact\": {\"ffile\": \"yes\", \"__current_case__\": 0, \"finfo\": {\"__class__\": \"ConnectedValue\"}}}, \"out\": {\"plots\": [\"i\", \"d\", \"c\", \"b\", \"x\", \"m\", \"h\", \"s\"], \"filtCounts\": \"true\", \"normCounts\": \"true\", \"libinfo\": \"true\", \"rscript\": \"true\", \"rdaOption\": \"true\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.38.3+galaxy3",
+            "type": "tool",
+            "uuid": "a3ecdd55-4b66-45fb-925e-a8c665b0e389",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "outFilt",
+                    "uuid": "bb9e9fce-b9c1-4c8c-8b58-a2d2532683df"
+                },
+                {
+                    "label": null,
+                    "output_name": "outReport",
+                    "uuid": "148bec73-d14b-47e0-aa36-de2379d5067a"
+                },
+                {
+                    "label": null,
+                    "output_name": "outTables",
+                    "uuid": "dbed20fe-5a84-45b1-b367-4ba4a8762b20"
+                },
+                {
+                    "label": null,
+                    "output_name": "libinfo",
+                    "uuid": "17e35220-c12d-442e-bb8d-8b818b552068"
+                },
+                {
+                    "label": null,
+                    "output_name": "rscript",
+                    "uuid": "952747bd-c16c-4db4-af9d-a1c27748bfea"
+                },
+                {
+                    "label": null,
+                    "output_name": "outNorm",
+                    "uuid": "902376b1-a180-4134-aaba-9d4c85aaf2f7"
+                }
+            ]
+        },
+        "14": {
+            "annotation": "",
+            "content_id": "toolshed.g2.bx.psu.edu/repos/iuc/limma_voom/limma_voom/3.38.3+galaxy3",
+            "errors": null,
+            "id": 14,
+            "input_connections": {
+                "anno|geneanno": {
+                    "id": 11,
+                    "output_name": "out_tab"
+                },
+                "cont|cinfo": {
+                    "id": 3,
+                    "output_name": "output"
+                },
+                "input|counts": {
+                    "id": 4,
+                    "output_name": "output"
+                },
+                "input|fact|finfo": {
+                    "id": 6,
+                    "output_name": "output"
+                }
+            },
+            "inputs": [],
+            "label": null,
+            "name": "limma",
+            "outputs": [
+                {
+                    "name": "outTables",
+                    "type": "input"
+                },
+                {
+                    "name": "outReport",
+                    "type": "html"
+                },
+                {
+                    "name": "outFilt",
+                    "type": "tabular"
+                },
+                {
+                    "name": "outNorm",
+                    "type": "tabular"
+                },
+                {
+                    "name": "rscript",
+                    "type": "txt"
+                },
+                {
+                    "name": "libinfo",
+                    "type": "tabular"
+                }
+            ],
+            "position": {
+                "bottom": -47.0625,
+                "height": 452,
+                "left": 1055,
+                "right": 1255,
+                "top": -499.0625,
+                "width": 200,
+                "x": 1055,
+                "y": -499.0625
+            },
+            "post_job_actions": {},
+            "tool_id": "toolshed.g2.bx.psu.edu/repos/iuc/limma_voom/limma_voom/3.38.3+galaxy3",
+            "tool_shed_repository": {
+                "changeset_revision": "0921444c832d",
+                "name": "limma_voom",
+                "owner": "iuc",
+                "tool_shed": "toolshed.g2.bx.psu.edu"
+            },
+            "tool_state": "{\"__input_ext\": \"tabular\", \"adv\": {\"lfc\": \"0.0\", \"pVal\": \"0.05\", \"pAdjust\": \"BH\", \"treat\": \"false\", \"topgenes\": \"40\", \"normalisationOption\": \"TMM\", \"robOption\": \"true\"}, \"anno\": {\"annoOpt\": \"yes\", \"__current_case__\": 0, \"geneanno\": null}, \"chromInfo\": \"/opt/galaxy/tool-data/shared/ucsc/chrom/hg19.len\", \"cont\": {\"cfile\": \"yes\", \"__current_case__\": 0, \"cinfo\": {\"__class__\": \"ConnectedValue\"}}, \"deMethod\": {\"de_select\": \"voom\", \"__current_case__\": 0, \"weightOption\": \"false\"}, \"f\": {\"filt\": {\"filt_select\": \"no\", \"__current_case__\": 1}}, \"input\": {\"format\": \"matrix\", \"__current_case__\": 1, \"counts\": {\"__class__\": \"ConnectedValue\"}, \"fact\": {\"ffile\": \"yes\", \"__current_case__\": 0, \"finfo\": {\"__class__\": \"ConnectedValue\"}}}, \"out\": {\"plots\": [\"i\", \"d\", \"c\", \"b\", \"x\", \"m\", \"h\", \"s\"], \"filtCounts\": \"true\", \"normCounts\": \"true\", \"libinfo\": \"true\", \"rscript\": \"true\", \"rdaOption\": \"true\"}, \"__page__\": null, \"__rerun_remap_job_id__\": null}",
+            "tool_version": "3.38.3+galaxy3",
+            "type": "tool",
+            "uuid": "fdd32b21-1909-4835-9ee5-cc472ed6475e",
+            "workflow_outputs": [
+                {
+                    "label": null,
+                    "output_name": "libinfo",
+                    "uuid": "019c7998-ec9a-4bbc-9f6f-395592d9422c"
+                },
+                {
+                    "label": null,
+                    "output_name": "outReport",
+                    "uuid": "4525f6ec-9e7c-466b-bd40-2f9dfbee8276"
+                },
+                {
+                    "label": null,
+                    "output_name": "outTables",
+                    "uuid": "c7bdd31e-d59d-41e2-b2c7-11552c6f4a0b"
+                },
+                {
+                    "label": null,
+                    "output_name": "rscript",
+                    "uuid": "ae1e65f1-e946-4e39-9655-537710101e91"
+                },
+                {
+                    "label": null,
+                    "output_name": "outNorm",
+                    "uuid": "520b58f9-a658-44b4-a3b5-5c7ab7664de0"
+                },
+                {
+                    "label": null,
+                    "output_name": "outFilt",
+                    "uuid": "6833e422-db8f-4cc6-9810-194623f3d164"
+                }
+            ]
+        }
+    },
+    "tags": [],
+    "uuid": "df51b825-4a07-46c3-b452-ec0ddc9dd6b8",
+    "version": 1
+}
