@@ -17,17 +17,21 @@ There are already larger and far more improved Galaxy instances available like h
 - Count-files and extra information concerning the CM-datasets
 - A universal workflow for RNA-seq analysis of paired and single-end data in Galaxy
 
-### What is Galaxy?
+## What is Galaxy?
 Galaxy is a simple click-through data analysis platform that does not require a bioinformatics skillset to perform data analysis
 As a user, you will only see the interface of Galaxy, no personal scripting or coding is necessary
+
 ![alt text](https://github.com/NielsMol/UNRAVEL-Galaxy/blob/main/Galaxy_click-through_overview_from_user_perspective.png)
 
-### Schematic overview of the current UNRAVEL-Galaxy construction
+
+## Schematic overview of the current UNRAVEL-Galaxy construction
 ![alt text](https://github.com/NielsMol/UNRAVEL-Galaxy/blob/main/Overview_of_project_UNRAVEL-Galaxy_construction.png)
+
 Ansible was used for building and maintaining the first images on SURF. Docker was used to pull the image from SURF to DRE.
 
-### Overview of possible next phases of the project
+## Overview of possible next phases of the project
 ![alt text](https://github.com/NielsMol/UNRAVEL-Galaxy/blob/main/Long-term_Theoretical_overview_of_the_UNRAVEL-Galaxy.png)
+
 
 ## Issues and Bugs encountered during this project
 - Remote access error to access SURF VMs
