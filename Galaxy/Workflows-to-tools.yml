@@ -1,0 +1,82 @@
+install_tool_dependencies: True
+install_repository_dependencies: True
+install_resolver_dependencies: True
+
+tools:
+- name: bwa
+  owner: devteam
+  revisions:
+  - 3fe632431b68
+  - dfd8b7f78c37
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: rseqc
+  owner: nilesh
+  revisions:
+  - f437057e46f1
+  - 09846d5169fa
+  - daae0a118c36
+  - 2e6190c29c54
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: deseq2
+  owner: iuc
+  revisions:
+  - de44f8eff84a
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_snpense
+  owner: iuc
+  revisions:
+  - 74385d563652
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_gost
+  owner: iuc
+  revisions:
+  - bf39cdd007f5
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_convert
+  owner: iuc
+  revisions:
+  - 8ee097f1763d
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_random
+  owner: iuc
+  revisions:
+  - 7d18814397a7
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: stringtie
+  owner: iuc
+  revisions:
+  - 1ebd14235b92
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: egsea
+  owner: iuc
+  revisions:
+  - 31ea4992b948
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: mageck_gsea
+  owner: iuc
+  revisions:
+  - d46e36492bff
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: fgsea
+  owner: iuc
+  revisions:
+  - 17eb1e0d711f
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: samtools_bam_to_cram
+  owner: iuc
+  revisions:
+  - 3d07b8a6dd8c
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
