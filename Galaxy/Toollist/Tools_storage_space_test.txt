@@ -1,0 +1,165 @@
+
+
+BEFORE
+- name: openms_spectrafilterscaler
+  owner: galaxyp
+  revisions:
+  - 5aa1f6da4650
+  tool_panel_section_label: Proteomics
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: bowtie_color_wrappers
+  owner: devteam
+  revisions:
+  - a3825c73805c
+  tool_panel_section_label: Mapping
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: cp_measure_image_intensity
+  owner: bgruening
+  revisions:
+  - 2681008d726f
+  tool_panel_section_label: Imaging
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+root@packer-Ubuntu-18:/home/ubuntu/galaxy# df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev             32G     0   32G   0% /dev
+tmpfs           6.3G  7.3M  6.3G   1% /run
+/dev/vda1       144G   26G  112G  19% /
+tmpfs            32G  8.0K   32G   1% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            32G     0   32G   0% /sys/fs/cgroup
+cvmfs2          500M  276M  225M  56% /cvmfs/cvmfs-config.galaxyproject.org
+cvmfs2          500M  276M  225M  56% /cvmfs/data.galaxyproject.org
+tmpfs           6.3G     0  6.3G   0% /run/user/1000
+root@packer-Ubuntu-18:/home/ubuntu/galaxy#
+
+shed-tools install -g https://unravel-galaxy-version-21-5.fairheartgalaxy-avans.surf-hosted.nl -a 0e0a4529020d411b751e5d88a4efcd99 -t workflow_tools.yml
+
+AFTER TEST:
+ubuntu@packer-Ubuntu-18:~$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev             32G     0   32G   0% /dev
+tmpfs           6.3G  7.3M  6.3G   1% /run
+/dev/vda1       144G   30G  107G  22% /
+tmpfs            32G  8.0K   32G   1% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            32G     0   32G   0% /sys/fs/cgroup
+cvmfs2          500M  276M  225M  56% /cvmfs/cvmfs-config.galaxyproject.org
+cvmfs2          500M  276M  225M  56% /cvmfs/data.galaxyproject.org
+tmpfs           6.3G     0  6.3G   0% /run/user/1000
+ubuntu@packer-Ubuntu-18:~$
+
+AFTER RNA_SEQ and CHIP_SEQ Tools:
+tools to install:
+- BWA = Name: bwa
+- RPKM = Name: rseqc
+- DEseq2 = Name: deseq2
+- gProfiler GOSt = Name: gprofiler_gost, Name: gprofiler_random
+- STRING = Name: stringtie, 
+- GSEA = Name: mageck_gsea
+
+- name: bwa
+  owner: devteam
+  revisions:
+  - 3fe632431b68
+  - dfd8b7f78c37
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: rseqc
+  owner: nilesh
+  revisions:
+  - f437057e46f1
+  - 09846d5169fa
+  - daae0a118c36
+  - 2e6190c29c54
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: deseq2
+  owner: iuc
+  revisions:
+  - de44f8eff84a
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_snpense
+  owner: iuc
+  revisions:
+  - 74385d563652
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_gost
+  owner: iuc
+  revisions:
+  - bf39cdd007f5
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_convert
+  owner: iuc
+  revisions:
+  - 8ee097f1763d
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_random
+  owner: iuc
+  revisions:
+  - 7d18814397a7
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: stringtie
+  owner: iuc
+  revisions:
+  - 1ebd14235b92
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: egsea
+  owner: iuc
+  revisions:
+  - 31ea4992b948
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: mageck_gsea
+  owner: iuc
+  revisions:
+  - d46e36492bff
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: fgsea
+  owner: iuc
+  revisions:
+  - 17eb1e0d711f
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+
+DATE 16-12-2020 19:27
+(ephemeris_venv) ubuntu@packer-Ubuntu-18:~/galaxy$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev             32G     0   32G   0% /dev
+tmpfs           6.3G  7.8M  6.3G   1% /run
+/dev/vda1       144G   37G  100G  27% /
+tmpfs            32G  8.0K   32G   1% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            32G     0   32G   0% /sys/fs/cgroup
+/dev/vdb        489G  2.0G  487G   1% /mnt/galaxy-data
+tmpfs           6.3G     0  6.3G   0% /run/user/1000
+cvmfs2          500M  276M  225M  56% /cvmfs/cvmfs-config.galaxyproject.org
+cvmfs2          500M  276M  225M  56% /cvmfs/data.galaxyproject.org
+(ephemeris_venv) ubuntu@packer-Ubuntu-18:~/galaxy$
+
+shed-tools install -g https://unravel-galaxy-version-21-5.fairheartgalaxy-avans.surf-hosted.nl -a 0e0a4529020d411b751e5d88a4efcd99 -t workflow_tools.yml
+
+(ephemeris_venv) ubuntu@packer-Ubuntu-18:~/galaxy$ df -h
+Filesystem      Size  Used Avail Use% Mounted on
+udev             32G     0   32G   0% /dev
+tmpfs           6.3G  7.8M  6.3G   1% /run
+/dev/vda1       144G   37G  100G  27% /
+tmpfs            32G  8.0K   32G   1% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs            32G     0   32G   0% /sys/fs/cgroup
+/dev/vdb        489G  2.0G  487G   1% /mnt/galaxy-data
+tmpfs           6.3G     0  6.3G   0% /run/user/1000
+cvmfs2          500M  276M  225M  56% /cvmfs/cvmfs-config.galaxyproject.org
+cvmfs2          500M  276M  225M  56% /cvmfs/data.galaxyproject.org
+(ephemeris_venv) ubuntu@packer-Ubuntu-18:~/galaxy$
+
+
+

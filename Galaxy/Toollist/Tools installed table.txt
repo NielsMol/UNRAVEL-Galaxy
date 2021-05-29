@@ -1,0 +1,41 @@
+Table 2.4.2: Abstract overview of which types of tools will be installed and tested
+Quality control
+Mapping/annotation
+DE-analysis
+Visualization
+Other
+FastQC
+ 
+HISAT2
+DESeq2
+HeatMap2
+Text manipulation
+MultiQC
+RNA-Star
+Limma-voom
+CummeRbund
+Filter-tools
+ 
+Trimmomatic
+ChIP-seeker
+Goseq
+Volcanoplot
+EGA-downloadStreamer
+ 
+CutAdapt
+Busco
+Cuff
+Violinlot
+Data Fetching
+ 
+TrimGalore!
+AnnotateMyIDs
+EdgeR
+ 
+Featurecounts
+K-mean Graph
+ 
+PCA plots
+Interactive tool:
+R-studio
+

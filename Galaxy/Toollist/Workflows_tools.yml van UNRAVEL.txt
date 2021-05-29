@@ -1,0 +1,218 @@
+install_tool_dependencies: True
+install_repository_dependencies: True
+install_resolver_dependencies: True
+
+tools:
+- name: fastqc
+  owner: devteam
+  revisions:
+  - ff9530579d1f
+  tool_panel_section_label: Quality control
+  tool_shed_url: https://toolshed.g2.bx.psu.edu/
+- name: multiqc
+  owner: iuc
+  revisions:
+  - 3d93dd18d9f8
+  - b2f1f75d49c4
+  tool_panel_section_label: The RNA-seq analysis pathway, Quality control
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: cutadapt
+  owner: lparsons
+  revisions:
+  - 49370cb85f0f
+  tool_panel_section_label: The RNA-seq analysis pathway
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: hisat2
+  owner: iuc
+  revisions:
+  - 0c16cad5e03b
+  tool_panel_section_label: The RNA-seq analysis pathway
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: rseqc
+  owner: nilesh
+  revisions:
+  - 09846d5169fa
+  - f437057e46f1
+  - daae0a118c36
+  - 2e6190c29c54
+  tool_panel_section_label: The RNA-seq analysis pathway
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: picard
+  owner: devteam
+  revisions:
+  - b9fbec5ac6b2
+  - 7d34178f2812
+  - a1f0b3f4b781
+  - 9ffcddf6f9c0
+  - 1cd1cf786389
+  - f6ced08779c4
+  - ab1f60c26526
+  tool_panel_section_label: The RNA-seq analysis pathway
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: samtools_idxstats
+  owner: devteam
+  revisions:
+  - 7a6034296ae9
+  tool_panel_section_label: The RNA-seq analysis pathway
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: featurecounts
+  owner: iuc
+  revisions:
+  - a37612abf7f9
+  tool_panel_section_label: The RNA-seq analysis pathway
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: goseq
+  owner: iuc
+  revisions:
+  - 9d1256d9ef0b
+  tool_panel_section_label: The RNA-seq analysis pathway
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: limma_voom
+  owner: iuc
+  revisions:
+  - 0921444c832d
+  tool_panel_section_label: The RNA-seq analysis pathway
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: volcanoplot
+  owner: iuc
+  revisions:
+  - 73b8cb5bddcd
+  tool_panel_section_label: The RNA-seq analysis pathway
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: ggplot2_heatmap2
+  owner: iuc
+  revisions:
+  - ca7cb0eaad62
+  tool_panel_section_label: The RNA-seq analysis pathway
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: cummerbund
+  owner: devteam
+  revisions:
+  - 78fcfc04fcfe
+  tool_panel_section_label: The RNA-seq analysis pathway
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: sra_tools
+  owner: iuc
+  revisions:
+  - c441583adae5
+  - f5ea3ce9b9b0
+  - aad3885b3216
+  tool_panel_section_label: Get Data
+  tool_shed_url: toolshed.g2.bx.psu.edu
+### Needed for adjusting data ###
+- name: collection_column_join
+  owner: iuc
+  revisions:
+  - 071084070619
+  tool_panel_section_label: Join, Subtract and Group
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: text_processing
+  owner: bgruening
+  revisions:
+  - 74a8bef53a00
+  - 20344ce0c811
+  - e39fceb6ab85
+  - a6f147a050a2
+  - fb4ff3c42cd3
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: merge_cols
+  owner: devteam
+  revisions:
+  - f2aac0c5c60d
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: annotatemyids
+  owner: iuc
+  revisions:
+  - 1aae04680c4b
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: column_maker
+  owner: devteam
+  revisions:
+  - 464b9305180e
+  tool_panel_section_label: Text Manipulation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: egsea
+  owner: iuc
+  revisions:
+  - 31ea4992b948
+  tool_panel_section_label: RNA-Seq
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: fgsea
+  owner: iuc
+  revisions:
+  - 17eb1e0d711f
+  tool_panel_section_label: Annotation
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gtftobed12
+  owner: iuc
+  revisions:
+  - b026dae67fba
+  tool_panel_section_label: Convert Formats
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: rgrnastar
+  owner: iuc
+  revisions:
+  - b9e04854e2bb
+  tool_panel_section_label: Mapping
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: datamash_transpose
+  owner: iuc
+  revisions:
+  - 22c2a1ac7ae3
+  tool_panel_section_label: Join, Subtract and Group
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: samtools_bam_to_cram
+  owner: iuc
+  revisions:
+  - 3d07b8a6dd8c
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_snpense
+  owner: iuc
+  revisions:
+  - 74385d563652
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_gost
+  owner: iuc
+  revisions:
+  - bf39cdd007f5
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_convert
+  owner: iuc
+  revisions:
+  - 8ee097f1763d
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: gprofiler_random
+  owner: iuc
+  revisions:
+  - 7d18814397a7
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: bwa
+  owner: devteam
+  revisions:
+  - 3fe632431b68
+  - dfd8b7f78c37
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: rseqc
+  owner: nilesh
+  revisions:
+  - f437057e46f1
+  - 09846d5169fa
+  - daae0a118c36
+  - 2e6190c29c54
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
+- name: deseq2
+  owner: iuc
+  revisions:
+  - de44f8eff84a
+  tool_panel_section_label: hPSC Data Pipeline
+  tool_shed_url: toolshed.g2.bx.psu.edu
